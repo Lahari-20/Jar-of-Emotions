@@ -1,4 +1,5 @@
-<<<<<<< HEAD
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -66,72 +67,4 @@
   </script>
 </body>
 </html>
-=======
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>😟 Anxious - Jar of Emotions</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #e8f5e9;
-      text-align: center;
-      margin: 0;
-      padding: 20px;
-    }
-    h1 { font-size: 2.2em; color: #2e7d32; }
-    .chits-container {
-      display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin-top: 40px;
-    }
-    .chit {
-      width: 100px; height: 100px; background-color: #a5d6a7; border-radius: 12px;
-      display: flex; align-items: center; justify-content: center; font-weight: bold;
-      font-size: 1.5em; cursor: pointer; transition: 0.3s; box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-    .chit:hover { background-color: #81c784; }
-    .revealed {
-      background-color: white !important; color: #333; font-size: 1em; padding: 10px;
-      white-space: normal;
-    }
-    a { display: inline-block; margin-top: 30px; color: #2e7d32; text-decoration: none; }
-  </style>
-</head>
-<body>
-  <h1>😟 You're feeling Anxious</h1>
-  <p>Click a chit to reveal a calming message.</p>
-  <div class="chits-container" id="chitsContainer"></div>
-  <a href="index.html">← Back to Emotions</a>
-  <script>
-    const messages = [
-      "Take a deep breath. You're safe right now.",
-      "This feeling will pass. You’ve faced hard moments before.",
-      "Let go of what you can’t control.",
-      "Anxiety is not who you are.",
-      "Breathe in calm, breathe out tension.",
-      "Your thoughts aren't facts.",
-      "It’s okay to pause.",
-      "You are doing better than you think.",
-      "Don’t let fear write your story.",
-      "You are capable of managing this.",
-      "Give yourself time to reset.",
-      "Trust yourself—you’ve got this.",
-      "You're allowed to feel overwhelmed.",
-      "Focus on what you can control.",
-      "One moment at a time is enough."
-    ];
-    const container = document.getElementById("chitsContainer");
-    messages.forEach((msg, i) => {
-      const chit = document.createElement("div");
-      chit.className = "chit";
-      chit.innerText = i + 1;
-      chit.onclick = () => {
-        chit.classList.add("revealed");
-        chit.innerText = msg;
-      };
-      container.appendChild(chit);
-    });
-  </script>
-</body>
-</html>
->>>>>>> dda985d31ec3074bc471edd7f1d1b49b088c59a7
+

@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -66,72 +66,3 @@
   </script>
 </body>
 </html>
-=======
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>😡 Angry - Jar of Emotions</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #ffebee;
-      text-align: center;
-      margin: 0;
-      padding: 20px;
-    }
-    h1 { font-size: 2.2em; color: #c62828; }
-    .chits-container {
-      display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin-top: 40px;
-    }
-    .chit {
-      width: 100px; height: 100px; background-color: #ef9a9a; border-radius: 12px;
-      display: flex; align-items: center; justify-content: center; font-weight: bold;
-      font-size: 1.5em; cursor: pointer; transition: 0.3s; box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-    .chit:hover { background-color: #e57373; }
-    .revealed {
-      background-color: white !important; color: #333; font-size: 1em; padding: 10px;
-      white-space: normal;
-    }
-    a { display: inline-block; margin-top: 30px; color: #c62828; text-decoration: none; }
-  </style>
-</head>
-<body>
-  <h1>😡 You're feeling Angry</h1>
-  <p>Click a chit to ground yourself.</p>
-  <div class="chits-container" id="chitsContainer"></div>
-  <a href="index.html">← Back to Emotions</a>
-  <script>
-    const messages = [
-      "Breathe. Speak only when you're calm.",
-      "Your feelings are valid. Let them out in healthy ways.",
-      "Pause. Not everything deserves your reaction.",
-      "Anger is a messenger—listen closely.",
-      "Let the fire warm, not burn.",
-      "Your peace is worth protecting.",
-      "Channel it into something meaningful.",
-      "Write, walk, breathe—release it safely.",
-      "You're in control, even when emotions rise.",
-      "Name it, don't numb it.",
-      "You’re allowed to feel this.",
-      "Forgiveness is freedom—for you.",
-      "Be fierce, but not destructive.",
-      "It's okay to walk away.",
-      "The storm will pass. So will this."
-    ];
-    const container = document.getElementById("chitsContainer");
-    messages.forEach((msg, i) => {
-      const chit = document.createElement("div");
-      chit.className = "chit";
-      chit.innerText = i + 1;
-      chit.onclick = () => {
-        chit.classList.add("revealed");
-        chit.innerText = msg;
-      };
-      container.appendChild(chit);
-    });
-  </script>
-</body>
-</html>
->>>>>>> dda985d31ec3074bc471edd7f1d1b49b088c59a7

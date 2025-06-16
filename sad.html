@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -66,72 +66,4 @@
   </script>
 </body>
 </html>
-=======
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>😢 Sad - Jar of Emotions</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #e3f2fd;
-      text-align: center;
-      margin: 0;
-      padding: 20px;
-    }
-    h1 { font-size: 2.2em; color: #2c3e50; }
-    .chits-container {
-      display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin-top: 40px;
-    }
-    .chit {
-      width: 100px; height: 100px; background-color: #bbdefb; border-radius: 12px;
-      display: flex; align-items: center; justify-content: center; font-weight: bold;
-      font-size: 1.5em; cursor: pointer; transition: 0.3s; box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-    .chit:hover { background-color: #90caf9; }
-    .revealed {
-      background-color: white !important; color: #333; font-size: 1em; padding: 10px;
-      white-space: normal;
-    }
-    a { display: inline-block; margin-top: 30px; color: #1565c0; text-decoration: none; }
-  </style>
-</head>
-<body>
-  <h1>😢 You're feeling Sad</h1>
-  <p>Click a chit to reveal a message.</p>
-  <div class="chits-container" id="chitsContainer"></div>
-  <a href="index.html">← Back to Emotions</a>
-  <script>
-    const messages = [
-      "It's okay to feel sad. Let it pass like a cloud.",
-      "Crying is not a weakness. It's healing.",
-      "Even the rain eventually stops and gives way to the sun.",
-      "You're not alone, even when it feels that way.",
-      "Sadness shows you care deeply. That's a strength.",
-      "Let your tears water the seeds of healing.",
-      "This feeling won't last forever.",
-      "You're stronger than your sadness.",
-      "Your emotions are valid. Let them speak.",
-      "You matter, even on the darkest days.",
-      "Give yourself grace today.",
-      "Be gentle with your heart.",
-      "Someone out there is rooting for you.",
-      "Take it one breath at a time.",
-      "Your story isn’t over. 🌈"
-    ];
-    const container = document.getElementById("chitsContainer");
-    messages.forEach((msg, i) => {
-      const chit = document.createElement("div");
-      chit.className = "chit";
-      chit.innerText = i + 1;
-      chit.onclick = () => {
-        chit.classList.add("revealed");
-        chit.innerText = msg;
-      };
-      container.appendChild(chit);
-    });
-  </script>
-</body>
-</html>
->>>>>>> dda985d31ec3074bc471edd7f1d1b49b088c59a7
+
