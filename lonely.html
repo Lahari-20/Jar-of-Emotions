@@ -5,60 +5,67 @@
   <title>🫥 Lonely - Jar of Emotions</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f3e5f5;
-      text-align: center;
-      margin: 0;
-      padding: 20px;
-    }
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff3e0;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
 
-    h1 {
-      font-size: 2.2em;
-      color: #7b1fa2;
-    }
+h1 {
+  font-size: 2.2em;
+  color: #ef6c00;
+}
 
-    .chits-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 15px;
-      margin-top: 40px;
-    }
+.chits-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 40px;
+}
 
-    .chit {
-      width: 100px;
-      height: 100px;
-      background-color: #ce93d8;
-      border-radius: 12px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: bold;
-      font-size: 1.5em;
-      cursor: pointer;
-      transition: 0.3s;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
+.chit {
+  flex: 1 1 150px;               /* Responsive width */
+  max-width: 200px;
+  min-height: 100px;
+  background-color: #ffcc80;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: background-color 0.3s, font-size 0.3s, padding 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  height: auto;
+}
 
-    .chit:hover {
-      background-color: #ba68c8;
-    }
+.chit:hover {
+  background-color: #ffb74d;
+}
 
-    .revealed {
-      background-color: white !important;
-      color: #333;
-      font-size: 1em;
-      padding: 10px;
-      white-space: normal;
-      text-align: center;
-    }
+.revealed {
+  background-color: #fff !important;
+  color: #333;
+  font-size: 1em;
+  font-weight: normal;
+  white-space: normal;
+  line-height: 1.4;
+}
+a {
+  display: inline-block;
+  margin-top: 30px;
+  color: #ef6c00;
+  text-decoration: none;
+}
 
-    a {
-      display: inline-block;
-      margin-top: 30px;
-      color: #7b1fa2;
-      text-decoration: none;
-    }
   </style>
 </head>
 <body>
