@@ -17,15 +17,36 @@
       display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin-top: 40px;
     }
     .chit {
-      width: 100px; height: 100px; background-color: #ffcc80; border-radius: 12px;
-      display: flex; align-items: center; justify-content: center; font-weight: bold;
-      font-size: 1.5em; cursor: pointer; transition: 0.3s; box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-    .chit:hover { background-color: #ffb74d; }
-    .revealed {
-      background-color: white !important; color: #333; font-size: 1em; padding: 10px;
-      white-space: normal;
-    }
+  min-width: 100px;
+  max-width: 200px; /* NEW: allows room for text */
+  min-height: 100px;
+  background-color: #ffcc80;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px; /* NEW: adds spacing inside the box */
+  text-align: center; /* centers multiline text */
+  word-wrap: break-word; /* ensures long words break */
+}
+
+.chit:hover {
+  background-color: #ffb74d;
+}
+
+.revealed {
+  background-color: white !important;
+  color: #333;
+  font-size: 1em;
+  white-space: normal; /* allow wrapping */
+  padding: 10px;
+}
+
     a { display: inline-block; margin-top: 30px; color: #ef6c00; text-decoration: none; }
   </style>
 </head>
