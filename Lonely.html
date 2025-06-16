@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🫥 Lonely - Jar of Emotions</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f3e5f5;
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 2.2em;
+      color: #7b1fa2;
+    }
+
+    .chits-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 40px;
+    }
+
+    .chit {
+      width: 100px;
+      height: 100px;
+      background-color: #ce93d8;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.5em;
+      cursor: pointer;
+      transition: 0.3s;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .chit:hover {
+      background-color: #ba68c8;
+    }
+
+    .revealed {
+      background-color: white !important;
+      color: #333;
+      font-size: 1em;
+      padding: 10px;
+      white-space: normal;
+      text-align: center;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 30px;
+      color: #7b1fa2;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>🫥 You're feeling Lonely</h1>
+  <p>Click a chit to reveal a message.</p>
+
+  <div class="chits-container" id="chitsContainer"></div>
+
+  <a href="index.html">← Back to Emotions</a>
+
+  <script>
+    const messages = [
+      "You are never truly alone. I'm thinking of you.",
+      "Distance can’t erase connection.",
+      "Your presence is a gift, even if others don’t always show it.",
+      "The world is better with you in it.",
+      "One kind soul is all it takes to feel seen.",
+      "You matter. Deeply.",
+      "Someone out there cares for you more than you know.",
+      "Reach out. You might be surprised who answers.",
+      "You are worthy of love and connection.",
+      "Loneliness is just a chapter, not the whole story.",
+      "Be your own best friend today.",
+      "Someone is missing your smile right now.",
+      "The night is darkest before the dawn.",
+      "You are surrounded by unseen support.",
+      "Let yourself be loved. Even by you."
+    ];
+
+    const container = document.getElementById("chitsContainer");
+    messages.forEach((msg, i) => {
+      const chit = document.createElement("div");
+      chit.className = "chit";
+      chit.innerText = i + 1;
+      chit.onclick = () => {
+        chit.classList.add("revealed");
+        chit.innerText = msg;
+      };
+      container.appendChild(chit);
+    });
+  </script>
+</body>
+</html>
