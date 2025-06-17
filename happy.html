@@ -5,27 +5,65 @@
   <title>😊 Happy - Jar of Emotions</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #fffde7;
-      text-align: center;
-      margin: 0;
-      padding: 20px;
-    }
-    h1 { font-size: 2.2em; color: #fbc02d; }
-    .chits-container {
-      display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin-top: 40px;
-    }
-    .chit {
-      width: 100px; height: 100px; background-color: #fff176; border-radius: 12px;
-      display: flex; align-items: center; justify-content: center; font-weight: bold;
-      font-size: 1.5em; cursor: pointer; transition: 0.3s; box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-    .chit:hover { background-color: #ffee58; }
-    .revealed {
-      background-color: white !important; color: #333; font-size: 1em; padding: 10px;
-      white-space: normal;
-    }
-    a { display: inline-block; margin-top: 30px; color: #f9a825; text-decoration: none; }
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fffde7;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.2em;
+  color: #fbc02d;
+}
+
+.chits-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 40px;
+}
+
+.chit {
+  width: 120px;
+  min-height: 100px;
+  background-color: #fff176;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1em;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 10px;
+  text-align: center;
+  word-wrap: break-word;
+  white-space: normal;
+  box-sizing: border-box;
+}
+
+.chit:hover {
+  background-color: #ffee58;
+}
+
+.revealed {
+  background-color: white !important;
+  color: #333;
+  font-size: 1em;
+  padding: 10px;
+  white-space: normal;
+}
+
+a {
+  display: inline-block;
+  margin-top: 30px;
+  color: #f9a825;
+  text-decoration: none;
+}
+
   </style>
 </head>
 <body>
@@ -35,20 +73,20 @@
   <a href="index.html">← Back to Emotions</a>
   <script>
     const messages = [
-      "Hold on to this feeling. You deserve it!",
-      "Your joy is contagious. Keep smiling!",
-      "Celebrate every small win!",
-      "Happiness looks great on you.",
-      "Soak in the sunshine moments.",
-      "Share your joy—it multiplies.",
-      "Laughter is a gift. Enjoy it.",
-      "Remember how this feels for later.",
-      "Keep doing what makes you glow.",
-      "Your smile brightens the world.",
-      "Let this moment energize you.",
-      "Happiness is your natural state.",
-      "You earned this joy. Claim it!",
-      "Live loudly in your light.",
+      "Yeah, smile. You actually look kinda good doing it.😏",
+      "🎉 Wow, a happy moment? Don’t worry, we’ll alert the media",
+      "👑 Own that joy. You're obviously the main character today",
+      "💅 Happiness suits you. Who knew?",
+      "That glow? Okay, calm down, you're not the sun. 👀",
+      "Sharing joy? Look at you being all generous and stuff.🙄",
+      "Happiness looks good on you. Not that I’m shocked or anything.🕶️",
+      " 📸 Hold on, let me take a pic—you being happy",
+      "✨ Glowing? Okay, chill—don’t blind the rest of us.",
+      " You're so vibrant it’s borderline annoying.🙄",
+      " Oh great, now you're smiling like life's actually working out—must be nice.😌",
+      "Smiling again? Careful, people might think you're approachable.😏",
+      " Hitting goals and being cute about it. Overachiever much? 🎯",
+      "💫 You’re not even trying and still outshining everyone. Rude.",
       "Today is worth remembering. 📸"
     ];
     const container = document.getElementById("chitsContainer");
